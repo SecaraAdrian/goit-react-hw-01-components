@@ -2,7 +2,10 @@
 
 import React from "react";
 import Profile from "./profile/Profile"; 
-import user from "../user.json"; 
+import Statistics from "./Statistics";
+import user from "../user.json";
+import data from '../data.json'; 
+
 
 function App() {
   return (
@@ -14,6 +17,7 @@ function App() {
         avatar={user.avatar}
         stats={user.stats} 
       />
+      <Statistics title="Upload stats" stats={data} />
     </div>
   );
 }
